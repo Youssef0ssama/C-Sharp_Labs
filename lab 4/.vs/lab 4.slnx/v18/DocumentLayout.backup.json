@@ -1,0 +1,224 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|d:\\youssef\\iti\\c#\\labs\\lab 4\\lab 4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|solutionrelative:lab 4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|d:\\youssef\\iti\\c#\\labs\\lab 4\\lab 4\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|solutionrelative:lab 4\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|d:\\youssef\\iti\\c#\\labs\\lab 4\\lab 4\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|solutionrelative:lab 4\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|d:\\youssef\\iti\\c#\\labs\\lab 4\\lab 4\\imovable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|solutionrelative:lab 4\\imovable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|d:\\youssef\\iti\\c#\\labs\\lab 4\\lab 4\\intern.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|solutionrelative:lab 4\\intern.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|d:\\youssef\\iti\\c#\\labs\\lab 4\\lab 4\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|solutionrelative:lab 4\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|d:\\youssef\\iti\\c#\\labs\\lab 4\\lab 4\\developer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|solutionrelative:lab 4\\developer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|d:\\youssef\\iti\\c#\\labs\\lab 4\\lab 4\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|solutionrelative:lab 4\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|d:\\youssef\\iti\\c#\\labs\\lab 4\\lab 4\\date.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|solutionrelative:lab 4\\date.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|d:\\youssef\\iti\\c#\\labs\\lab 4\\lab 4\\counter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|solutionrelative:lab 4\\counter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|d:\\youssef\\iti\\c#\\labs\\lab 4\\lab 4\\banksystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|solutionrelative:lab 4\\banksystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|d:\\youssef\\iti\\c#\\labs\\lab 4\\lab 4\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C710759B-307D-4400-8AC7-640ECCC599C4}|lab 4\\lab 4.csproj|solutionrelative:lab 4\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\Student.cs",
+              "RelativeDocumentMoniker": "lab 4\\Student.cs",
+              "ToolTip": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\Student.cs",
+              "RelativeToolTip": "lab 4\\Student.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:51:24.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Shape.cs",
+              "DocumentMoniker": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\Shape.cs",
+              "RelativeDocumentMoniker": "lab 4\\Shape.cs",
+              "ToolTip": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\Shape.cs",
+              "RelativeToolTip": "lab 4\\Shape.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:51:00.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IMovable.cs",
+              "DocumentMoniker": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\IMovable.cs",
+              "RelativeDocumentMoniker": "lab 4\\IMovable.cs",
+              "ToolTip": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\IMovable.cs",
+              "RelativeToolTip": "lab 4\\IMovable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:50:21.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Intern.cs",
+              "DocumentMoniker": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\Intern.cs",
+              "RelativeDocumentMoniker": "lab 4\\Intern.cs",
+              "ToolTip": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\Intern.cs",
+              "RelativeToolTip": "lab 4\\Intern.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwBoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:49:20.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\Manager.cs",
+              "RelativeDocumentMoniker": "lab 4\\Manager.cs",
+              "ToolTip": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\Manager.cs",
+              "RelativeToolTip": "lab 4\\Manager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:48:55.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Developer.cs",
+              "DocumentMoniker": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\Developer.cs",
+              "RelativeDocumentMoniker": "lab 4\\Developer.cs",
+              "ToolTip": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\Developer.cs",
+              "RelativeToolTip": "lab 4\\Developer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:48:03.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\Program.cs",
+              "RelativeDocumentMoniker": "lab 4\\Program.cs",
+              "ToolTip": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\Program.cs",
+              "RelativeToolTip": "lab 4\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:30:30.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\Employee.cs",
+              "RelativeDocumentMoniker": "lab 4\\Employee.cs",
+              "ToolTip": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\Employee.cs",
+              "RelativeToolTip": "lab 4\\Employee.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAQwBsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:47:26.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Date.cs",
+              "DocumentMoniker": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\Date.cs",
+              "RelativeDocumentMoniker": "lab 4\\Date.cs",
+              "ToolTip": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\Date.cs",
+              "RelativeToolTip": "lab 4\\Date.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:41:38.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "counter.cs",
+              "DocumentMoniker": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\counter.cs",
+              "RelativeDocumentMoniker": "lab 4\\counter.cs",
+              "ToolTip": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\counter.cs",
+              "RelativeToolTip": "lab 4\\counter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:40:50.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BankSystem.cs",
+              "DocumentMoniker": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\BankSystem.cs",
+              "RelativeDocumentMoniker": "lab 4\\BankSystem.cs",
+              "ToolTip": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\BankSystem.cs",
+              "RelativeToolTip": "lab 4\\BankSystem.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA7wB8AAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:40:09.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Animal.cs",
+              "DocumentMoniker": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\Animal.cs",
+              "RelativeDocumentMoniker": "lab 4\\Animal.cs",
+              "ToolTip": "D:\\youssef\\ITI\\C#\\labs\\lab 4\\lab 4\\Animal.cs",
+              "RelativeToolTip": "lab 4\\Animal.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAQwCwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:39:23.574Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
