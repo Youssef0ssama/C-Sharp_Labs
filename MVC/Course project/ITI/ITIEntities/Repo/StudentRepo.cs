@@ -1,0 +1,37 @@
+﻿using ITIEntities.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ITIEntities.Repo
+{
+    public class StudentRepo : IEntityRepo<Student>
+    {
+        ITIContext context = new ITIContext();
+        public List<Student> GetAll()
+        {
+            return context.Students.Include(s => s.Department).ToList();
+        }
+        public Student GetById(int id)
+        {
+            return context.Students.Find(id);
+        }
+        public void Add(Student student)
+        {
+            context.Students.Add(student);
+            context.SaveChanges();
+        }
+        public void Update(Student student)
+        {
+            context.Students.Update(student);
+            context.SaveChanges();
+        }
+        public void Delete(int id)
+        {
+            context.Students.Remove(GetById(id));
+            context.SaveChanges();
+        }
+    }
+}

@@ -1,0 +1,24 @@
+﻿@model Department
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h1 class="alert alert-danger">
+        are you sure
+        delete
+        @Model.DeptName
+    </h1>
+    <form method="post">
+        <input asp-for="DeptId" type="hidden" />
+        <input type="submit" value="Delete" class="btn btn-danger" />
+    </form>
+</body>
+</html>

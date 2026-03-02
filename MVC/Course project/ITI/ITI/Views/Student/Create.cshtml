@@ -1,0 +1,36 @@
+﻿
+@model StudentVM
+@{
+    Layout = null;
+    SelectList deptList = new SelectList(ViewBag.depts, "DeptId", "DeptName");
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <form method="post">
+        <div asp-validation-summary="All"></div>
+        <label asp-for="Name"></label><input asp-for="Name" />
+        <span asp-validation-for="Name">    </span>
+        <br />
+        <label asp-for="Age"></label><input asp-for="Age" />
+        <span asp-validation-for="Age">    </span>
+        <br />
+        <label asp-for="Email"></label><input asp-for="Email" />
+        <span asp-validation-for="Email">    </span>
+        <br />
+        <label asp-for="DeptNo">Department</label>
+        <select asp-for="DeptNo" asp-items="deptList">
+            <option>Select Department</option>
+        </select>
+        <span asp-validation-for="DeptNo">    </span>
+        <br />
+        <input type="submit" value="add" />
+    </form>
+</body>
+</html>

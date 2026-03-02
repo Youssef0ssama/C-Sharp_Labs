@@ -1,0 +1,22 @@
+﻿@model Department
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <form method="post">
+        <label asp-for="DeptId"></label><input asp-for="DeptId" /><br />
+        <label asp-for="DeptName"></label><input asp-for="DeptName" /><br />
+        <label asp-for="Capacity"></label><input asp-for="Capacity" /><br />
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </form>
+</body>
+</html>
