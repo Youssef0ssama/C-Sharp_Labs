@@ -12,6 +12,8 @@ namespace ITIEntities
         [StringLength(50), Required]
         public string Name { get; set; }
         public int Age { get; set; }
+        [Required]
+        public string Email { get; set; }
         [ForeignKey(nameof(Department))]
         public int Deptno { get; set; }
         public virtual Department Department { get; set; }

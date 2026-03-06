@@ -35,5 +35,13 @@ namespace ITI.Controllers
             stdRepo.Add(std);
             return RedirectToAction("Index");
         }
+        public IActionResult CheckEmail(string email, int? id)
+        {
+            var std = stdRepo.GetAll().FirstOrDefault(s => s.Email == email);
+            if (std == null)
+                return Json(true);
+            else
+                return Json($"Email {email} is already exist");
+        }
     }
 }

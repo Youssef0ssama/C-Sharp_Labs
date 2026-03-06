@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace ITIEntities.Repo
@@ -8,6 +9,7 @@ namespace ITIEntities.Repo
     {
         List<T> GetAll();
         T GetById(int id);
+        List<T> FindAll(Expression<Func<T, bool>> predicate);
         void Add(T entity);
         void Update(T entity);
         void Delete(int id);

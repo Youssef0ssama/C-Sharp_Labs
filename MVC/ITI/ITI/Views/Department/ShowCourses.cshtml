@@ -1,0 +1,15 @@
+﻿@model Department
+@{
+    // Layout = "_layout2";
+}
+
+<h1 class="alert alert-info">
+    courses of department @Model.DeptName
+</h1>
+<ul>
+    @foreach (var item in Model.Courses)
+    {
+        <li>@item.Name</li>
+    }
+
+</ul>

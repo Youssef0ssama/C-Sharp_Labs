@@ -1,0 +1,27 @@
+﻿
+@{
+    // Layout = "_layout2";
+}
+
+<h1> update department @Model.DeptName courses</h1>
+<form method="post">
+    <label>Courses to remove</label>
+    <select name="coursestoremove" multiple>
+        @foreach (var item in Model.Courses)
+        {
+            <option value="@item.CrsId">@item.Name</option>
+        }
+    </select>
+    <br />
+
+    <label>Courses to add</label>
+    <select name="coursestoadd" multiple>
+        @foreach (var item in ViewBag.coursesNotInDept)
+        {
+            <option value="@item.CrsId">@item.Name</option>
+        }
+    </select>
+    <br />
+
+    <input type="submit" value="update" />
+</form>

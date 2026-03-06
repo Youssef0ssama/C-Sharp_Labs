@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace ITIEntities.Repo
@@ -16,6 +17,10 @@ namespace ITIEntities.Repo
         public Department GetById(int id)
         {
             return context.Departments.Find(id);
+        }
+        public List<Department> FindAll(Expression<Func<Department, bool>> predicate)
+        {
+            return context.Departments.Where(predicate).ToList();
         }
         public void Add(Department Department)
         {

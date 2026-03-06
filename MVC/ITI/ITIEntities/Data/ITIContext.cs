@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ITIEntities.Data
 {
-    internal class ITIContext : DbContext
+    public class ITIContext : DbContext
     {
         public DbSet<Student> Students { get; set; }
         public DbSet<Department> Departments { get; set; }

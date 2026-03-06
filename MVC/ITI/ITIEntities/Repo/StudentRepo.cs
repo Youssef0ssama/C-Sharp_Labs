@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace ITIEntities.Repo
@@ -10,6 +11,10 @@ namespace ITIEntities.Repo
     public class StudentRepo : IEntityRepo<Student>
     {
         ITIContext context = new ITIContext();
+        public List<Student> FindAll(Expression<Func<Student, bool>> predicate)
+        {
+            return context.Students.Where(predicate).ToList();
+        }
         public List<Student> GetAll()
         {
             return context.Students.Include(s => s.Department).ToList();
