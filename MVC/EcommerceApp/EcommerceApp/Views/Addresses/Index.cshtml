@@ -1,0 +1,31 @@
+﻿@model IEnumerable<EcommerceApp.Models.Address>
+@{
+    ViewData["Title"] = "My Addresses";
+}
+
+<h2>My Saved Addresses</h2>
+<p><a asp-action="Create" class="btn btn-primary">Add New Address</a></p>
+
+<table class="table table-bordered mt-3">
+    <thead class="table-light">
+        <tr>
+            <th>Street</th>
+            <th>City</th>
+            <th>Zip</th>
+            <th>Country</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Street</td>
+                <td>@item.City</td>
+                <td>@item.Zip</td>
+                <td>@item.Country</td>
+                <td><a asp-action="Delete" asp-route-id="@item.AddressId" class="btn btn-sm btn-danger">Delete</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

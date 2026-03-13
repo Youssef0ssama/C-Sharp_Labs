@@ -1,0 +1,90 @@
+﻿@model EcommerceApp.ViewModels.ProductListVM
+
+@{
+    ViewData["Title"] = "Catalog";
+}
+
+<h2 class="mb-4">Our Products</h2>
+
+<form asp-action="Index" method="get" class="row mb-4">
+    <div class="col-md-4 mb-2">
+        <select name="categoryId" class="form-select" onchange="this.form.submit()">
+            <option value="">All Categories</option>
+            @foreach (var cat in Model.Categories)
+            {
+                if (Model.SelectedCategoryId == cat.CategoryId)
+                {
+                    <option value="@cat.CategoryId" selected="selected">@cat.Name</option>
+                }
+                else
+                {
+                    <option value="@cat.CategoryId">@cat.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col-md-6 mb-2">
+        <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="Search products..." value="@Model.SearchQuery" />
+            <button type="submit" class="btn btn-primary">Search</button>
+            @if (!string.IsNullOrEmpty(Model.SearchQuery) || Model.SelectedCategoryId.HasValue)
+            {
+                <a asp-action="Index" class="btn btn-outline-secondary">Clear</a>
+            }
+        </div>
+    </div>
+</form>
+
+<div class="row">
+    @if (!Model.Products.Any())
+    {
+        <div class="col-12 text-center mt-5">
+            <h4 class="text-muted">No products found matching your criteria.</h4>
+        </div>
+    }
+    else
+    {
+        @foreach (var item in Model.Products)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">@item.Category.Name</h6>
+                        <p class="card-text fw-bold text-success">$@item.Price.ToString("0.00")</p>
+                        <p class="card-text small">In Stock: @item.StockQuantity</p>
+                    </div>
+                    <div class="card-footer bg-white border-top-0">
+                        <a asp-controller="Catalog" asp-action="Details" asp-route-id="@item.ProductId" class="btn btn-outline-secondary w-100 mb-2">View Details</a>
+                        
+                        @if (item.StockQuantity > 0)
+                        {
+                            <a asp-controller="Cart" asp-action="Add" asp-route-productId="@item.ProductId" class="btn btn-primary w-100">Add to Cart</a>
+                        }
+                        else
+                        {
+                            <button class="btn btn-danger w-100" disabled>Out of Stock</button>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+@if (Model.TotalPages > 1)
+{
+    <nav aria-label="Page navigation" class="mt-4">
+        <ul class="pagination justify-content-center">
+            @for (int i = 1; i <= Model.TotalPages; i++)
+            {
+                <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                    <a class="page-link" asp-action="Index"
+                       asp-route-page="@i"
+                       asp-route-categoryId="@Model.SelectedCategoryId"
+                       asp-route-q="@Model.SearchQuery">@i</a>
+                </li>
+            }
+        </ul>
+    </nav>
+}

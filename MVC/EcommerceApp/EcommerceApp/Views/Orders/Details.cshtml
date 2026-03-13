@@ -1,0 +1,58 @@
+﻿@model EcommerceApp.ViewModels.OrderDetailsVM
+@{
+    ViewData["Title"] = "Order Details";
+}
+
+<h2>Order Details: @Model.OrderHeader.OrderNumber</h2>
+<hr />
+
+<div class="row mb-4">
+    <div class="col-md-6">
+        <h4>Shipping Details</h4>
+        <p>
+            @Model.OrderHeader.ShippingAddress.Street<br />
+            @Model.OrderHeader.ShippingAddress.City, @Model.OrderHeader.ShippingAddress.Zip<br />
+            @Model.OrderHeader.ShippingAddress.Country
+        </p>
+    </div>
+    <div class="col-md-6 text-end">
+        <h4>Status: @(Model.OrderHeader.Status == 0 ? "Pending" : "Shipped")</h4>
+        
+        @if (User.IsInRole("Admin"))
+        {
+            <form asp-action="UpdateStatus" method="post" class="mt-2 d-inline-flex">
+                <input type="hidden" name="orderId" value="@Model.OrderHeader.OrderId" />
+                <select name="newStatus" class="form-select form-select-sm me-2">
+                    <option value="0">Pending</option>
+                    <option value="1">Shipped</option>
+                </select>
+                <button type="submit" class="btn btn-sm btn-warning">Update</button>
+            </form>
+        }
+    </div>
+</div>
+
+<h4>Items in this Order</h4>
+<table class="table table-bordered">
+    <thead>
+        <tr><th>Product</th><th>Price</th><th>Quantity</th><th>Line Total</th></tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.OrderItems)
+        {
+            <tr>
+                <td>@item.Product.Name</td>
+                <td>$@item.UnitPrice.ToString("0.00")</td>
+                <td>@item.Quantity</td>
+                <td>$@item.LineTotal.ToString("0.00")</td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3" class="text-end fw-bold">Grand Total:</td>
+            <td class="fw-bold text-success">$@Model.OrderHeader.TotalAmount.ToString("0.00")</td>
+        </tr>
+    </tfoot>
+</table>
+<a asp-action="Index" class="btn btn-secondary">Back to Orders</a>

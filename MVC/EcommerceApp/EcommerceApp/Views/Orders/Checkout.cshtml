@@ -1,0 +1,57 @@
+﻿@model EcommerceApp.ViewModels.CheckoutVM
+
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<h2>Checkout</h2>
+<hr />
+<div class="row">
+    <div class="col-md-8">
+        <form asp-action="Checkout" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            <h4>Shipping Details</h4>
+            <div class="form-group mb-4">
+                <label asp-for="SelectedAddressId" class="control-label">Select Shipping Address</label>
+                <select asp-for="SelectedAddressId" class="form-select" asp-items="ViewBag.Addresses">
+                    <option value="">-- Choose your saved address --</option>
+                </select>
+                <span asp-validation-for="SelectedAddressId" class="text-danger"></span>
+                
+                <div class="mt-2">
+                    <a asp-controller="Addresses" asp-action="Create" class="btn btn-sm btn-outline-primary">
+                        + Add a New Address
+                    </a>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-success btn-lg w-100">Place Order</button>
+        </form>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card shadow-sm">
+            <div class="card-header bg-dark text-white">Order Summary</div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    @foreach (var item in Model.CartItems)
+                    {
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            @item.ProductName (x@item.Quantity)
+                            <span>$@item.LineTotal.ToString("0.00")</span>
+                        </li>
+                    }
+                </ul>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+                <strong>Total Amount</strong>
+                <strong class="text-success">$@Model.CartItems.Sum(x => x.LineTotal).ToString("0.00")</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
